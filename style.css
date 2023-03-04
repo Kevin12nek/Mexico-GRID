@@ -1,154 +1,833 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap');
 
-/*reset*/
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-
-/* Main */
-
-html,
-body{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+    font-family: 'Outfit', sans-serif;
+    list-style: none;
 
 }
 
-h1{
-    font-size: 2.5rem;
+/* Barra Inicial */
+header {
     width: 100%;
-    padding-left: 24px;
-}
-
-p{
-    font-size: 1rem;
-    margin: 10px 0;
-    padding: 0 30px;
-    line-height: 1.7rem;
-    text-align: justify;
-}
-
-/* Utility clases */
-.container{
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 30px;
-}
-
-.display-1{
-    font-size: 6rem;
-}
-
-.display-2{
-font-size: 2.5rem;
-}
-
-.display-1,.display-2{
-    text-transform: uppercase;
-}
-
-.large{
-    font-size: 1.2rem;
-}
-
-
-/* Showcase */
-#showcase{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/background-showcase.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
-    padding: 150px 0;
-}
-
-#showcase .showcase-box{
-width: 60%;
-}
-
-/* Gallery */
-#gallery{
-background: url(/ejer/Proyectos/paginamexicogrid/img/background-gallery.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-height: 100%;
-padding: 80px 0 ;
-}
-
-.gallery-grid-box{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-
-#gallery .gallery-grid{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr); 
-   gap: 20px;
-}
-
-#gallery .box-1{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/gallery-1.jpg);
-    grid-column: 1;
-    grid-row: 1/3;
-}
-#gallery .box-2{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/gallery-2.jpg);
-    grid-column: 2;
-    grid-row: 1/2;
-}
-#gallery .box-3{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/gallery-3.jpg);
-    grid-column: 3;
-    grid-row: 1/2;
-}
-#gallery .box-4{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/gallery-4.jpg);
-    grid-column: 2;
-    grid-row: 2/3;
-}
-#gallery .box-5{
-    background: url(/ejer/Proyectos/paginamexicogrid/img/gallery-5.jpg);
-    grid-column: 3;
-    grid-row: 2/3;
-}
-
-#gallery .box-1{
-    height: 820px;
-}
-
-#gallery .box-2,#gallery .box-3,
-#gallery .box-4,#gallery .box-5
-{
-    height: 400px;
-}
-
-#gallery .box-1,#gallery.box-2,#gallery .box-3,
-#gallery .box-4,#gallery .box-5
-{
-    background-repeat: no-repeat;
+    /* background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://www.teahub.io/photos/full/208-2081147_fondos-de-pantalla-full-hd-colores.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
     background-position: center;
     background-size: cover;
+    /* transition: all 4s; */
 }
 
-/* Footer  */
-#main-footer{
+nav {
+    color: white;
+    width: 100%;
+    height: 100px;
     display: flex;
-    padding-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    transition: all 2s;
+
+}
+
+.menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+.menu a:hover {
+    color: cyan;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #f9004d;
+    transition: all .5s;
+
+}
+
+/* Fin Barra Inicial */
+
+/* Inicio Texto Inicial */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 80vh;
+    color: white;
+    /* align-items: center; */
     justify-content: center;
-    justify-items: center;
+    text-align: justify;
+    /* padding: 0 20px; */
+    margin-left: 100px;
+    float: left;
+    transition: all 10s;
+
+}
+
+/* INICIO TAMANO TEXT INICIO */
+.inicio h1 {
+    font-size: 5rem;
+    transition: all 5s;
+    color: cyan;
+}
+
+.inicio p {
+    font-size: 1.3rem;
+}
+
+/* FIN TAMANO TEXT INICIO */
+
+
+.imagenp {
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    float: right;
+    justify-content: center;
     align-items: center;
 }
 
-#main-footer img{
-    height: 30px;
+.imagenp img {
+    height: 26rem;
+    border-radius: 30px 0 30px;
+    border: 1px solid white;
 }
 
-.footer-copy{
+/* About INICIO */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    /* padding: 78px 0px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_153652\ \(3\).jpg);
+    background-position: top;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.about img {
+    height: auto;
+    width: 350px;
+    border-radius: 10px 0 10px 0;
+}
+
+.about-text {
+    width: 90%;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    height: 80vh;
+    margin: 0 auto;
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.about-text h1 {
+    color: white;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span {
+    color: #f9004d;
+}
+
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 1rem;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+button {
+    background: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* About FINAL */
+
+/* DESCARGA CV INICIO */
+.CV {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #f9004d;
+    border-radius: 0 15px;
+}
+
+/* DESCARGA CV FINAL */
+
+/* CV INICIO HOVER */
+.CV:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 1s;
+}
+
+/* CV FINAL HOVER */
+
+
+/* Proyectos INICIO */
+.Proyectos {
+ 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/pro1/fondoo.avif);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.mainpro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PRIMER */
+.primer {
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid #f9004d; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);   
+}
+    .primer h1 {
+    margin: 10px;
+    color: black;
+}
+
+.primer p {
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.primer a {
+    margin: 20px;
+    padding: 5px;
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px 0px;
+}
+
+
+.primer img {
+    height: 30rem;
+    width: 50rem;
+    border-radius: 10px;
+}
+
+
+
+.primer a:hover {
+    border-radius: 0;
+    transition: all 1s;
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    color: black;
+}
+
+/* PRIMER FINAL*/
+
+
+
+/* Proyectos FINAL */
+
+
+/* CARDS INICIO */
+
+.bodycard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f3f1f5;
+}
+
+.bodycard2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.card{
+    margin: 20px;
+    width: 600px;
+    height: 380px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow:3px 5px 5px rgba(3, 32, 51, .8) ;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+/* BOTON RETURN CARD INICIO */
+.return img{
+    width: 50px;
+}
+.return{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.return p{
+    color: #f9004d;
+
+}
+/* BOTON RETURN CARD FINAL */
+
+.content h2, a, p{
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+
+.card:hover .content{
+    opacity: 1;
+}
+/* CARDS FINAL */
+
+
+/* Skills */
+
+
+/* INICIO SKILLS BARRAS */
+/* .skil{
+    width: 100vw;
+    height: 100vh;
+} */
+.skills{
+    margin-top: 100px;
+    background: #333;
+    text-transform: uppercase;
+    width: 90vw;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.skills h1{
+    text-align: center;
+}
+
+.skills h3{
+    margin: 5px;
+}
+
+.skills h4{
+    margin: 5px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%,rgba(252, 103, 103, 1)100%);
+}
+
+.HTML{
+    width: 90%;
+    animation: html 3s;
+}
+
+.CSS{
+    width: 50%;
+    animation: css 3s;
+}
+
+
+.JAVASCRIPT{
+    width: 15%;
+    animation: javascript 3s;
+}
+
+
+.BOOTSTRAP{
+    width: 40%;
+    animation: bootstrap 3s;
+}
+
+.MYSQL{
+    width: 20%;
+    animation: mysql 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+/* FINAL SKILLS BARRAS */
+
+@media (max-width:800px) {
+    .container h2 {
+        font-size: 60px;
+        letter-spacing: 19px;
+        line-height: 35px;
+    }
+
+    .container h2 span {
+        font-size: 26px;
+    }
+}
+
+/* Skills FINAL */
+
+/* Skills logo */
+
+.logos{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logos img{
+    margin-top: 10px;
+    height: 12rem;
+}
+
+@media(max-width:1100px) {
+    .logos{
+        height: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .logos img{
+        margin: 0px;
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .logos img:hover{
+        transition: all 3s;
+        transform: rotateY(360deg);
+    }
+
+}
+
+
+/* Skills logo */
+
+
+/* MEDIAS PANTALLA */
+@media(max-width:715px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        flex-direction: row;
+    }
+}
+
+
+/* 375px */
+@media(max-width:375px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        letter-spacing: 7px;
+    }
+
+
+
+    
+    .menu a{
+        font-size: 20px;
+    }
+
+
+    .inicio h1 {
+        font-size: 2rem;
+    }
+
+
+    .inicio p {
+        font-size: .8rem;
+    }
+
+
+    .imagenp {
+        display: none;
+    }
+
+    .inicio {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        margin-left: 0px;
+
+    }
+
+}
+
+
+/* 375px */
+
+@media(max-width:414px) {
+    nav {
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: 7px;
+        /* margin: 10px; */
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:616px) {
+    nav {
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+}
+
+
+@media(max-width:414px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 3rem;
+    }
+
+
+    .inicio p {
+        font-size: 1rem;
+    }
+
+
+    .imagenp {
+        display: none;
+    }
+
+    .inicio {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        margin-left: 0px;
+
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+        /* background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://www.teahub.io/photos/full/208-2081147_fondos-de-pantalla-full-hd-colores.jpg); */
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
+        background-position: center;
+        background-size: cover;
+        /* transition: all 4s; */
+    }
+
+}
+
+
+/* Animacion Return */
+  .return{
+    animation-name: return;
+    animation-duration: 1s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes return{
+    /* 0% {top:0px;}
+    25% {top:5px;}
+    50% {top:10px;}
+    75% {top:15;}
+    100% {top:20px;} */
+
+    /* 25%{top: 1%;}
+    50%{top: 1.5%;}
+    75%{top: 2%;}
+    100%{top: 2.5%;}
+    75%{top: 2%;}
+    50%{top: 1.5%;}
+    25%{top: 1%;} */
+
+
+    0%{bottom:0px;}
+    25%{bottom: 5px;}
+    50%{bottom: 8px;}
+    75%{bottom: 5px;}
+    85%{bottom: 3px;}
+    100%{bottom: 0px;}
+
+
+
+  }
+/* Animacion Return */
+
+
+/* MEDIAS ABOUT */
+@media(max-width:414px) {
+
+    .about{
+        padding: 0;
+    }
+
+
+    header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+    
+    .imgp {
+        display: none;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .Proyectos {
+        flex-direction: column;
+    }
+
+}
+
+/* Media Primer Pro */
+@media(max-width:414px) {
+
+
+
+    header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+
+    
+
+    .Proyectos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primer img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .primer {
+        height: 50%;
+        width: 90%;
+        border: 1px solid #f9004d;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+    
+    }
+
+}
+
+
+@media(max-width:1342px) {
+
+
+
+    header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+
+
+    .Proyectos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primer img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .primer {
+        height: 50%;
+        width: 90%;
+        border: 1px solid #f9004d;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+    
+    }
+
+}
+
+/* Final Media Pro */
+
+/* MEDIA PROYECTOS INICIO */
+@media(max-width:1116px) {
+
+    .bodycard,.bodycard2{
+        flex-direction: column;
+    }
+    .card{
+width: 20rem;
+height: 15rem;
+    }
+
+
+}
+
+/* MEDIA PROYECTOS FINAL */
+
+@media screen and (max-width: 1080px), 
+       screen and (max-height: 2400px) {
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/IMG_20221028_164032.jpg);
+            background-position: center;
+            background-size: cover;
+        }
 }
